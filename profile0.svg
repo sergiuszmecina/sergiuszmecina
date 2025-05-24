@@ -43,7 +43,7 @@
                                     <rect class="day" x="150" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
                                     <rect class="day" x="165" y="0" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
                                     <rect class="day" x="180" y="0" width="11" height="11" fill="#216e39" rx="2" ry="2"/>
-                                    <rect class="day" x="195" y="0" width="11" height="11" fill="#40c463" rx="2" ry="2"/>
+                                    <rect class="day" x="195" y="0" width="11" height="11" fill="#30a14e" rx="2" ry="2"/>
                                 </g>
                             </svg>
                         </div>
@@ -69,7 +69,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"/>
                             </svg>
-                            807 Commits
+                            819 Commits
                         </div>
                         <div class="field">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -1242,10 +1242,8 @@
                                 <div class="details">
                                     <div>on branch <span class="code">master</span></div>
                                     <div class="commit">
-                                        <div class="sha">#4cbceb6</div>
-                                        <div class="message">Add HologramStore with localization and streamline formatting
-
-Introduce `HologramStore` for managing holograms with multi-language support through localized messages. Simplify code formatting by removing redundant final modifiers, adjusting object creation, and refining logic in related classes.</div>
+                                        <div class="sha">#00f094f</div>
+                                        <div class="message">restructured project</div>
                                     </div>
                                 </div>
                             </section>
@@ -1264,10 +1262,8 @@ Introduce `HologramStore` for managing holograms with multi-language support thr
                                 <div class="details">
                                     <div>on branch <span class="code">master</span></div>
                                     <div class="commit">
-                                        <div class="sha">#7784029</div>
-                                        <div class="message">Add support for invulnerability toggle via command and packet
-
-Implemented the "god" command to toggle invulnerability for players locally and via target UUID using the NATS broker. Added related message templates to `EssentialsMessages` and updated `EssentialsSubscriber` to handle invulnerability change packets.</div>
+                                        <div class="sha">#10ae849</div>
+                                        <div class="message">restructured project</div>
                                     </div>
                                 </div>
                             </section>
@@ -1286,10 +1282,8 @@ Implemented the "god" command to toggle invulnerability for players locally and 
                                 <div class="details">
                                     <div>on branch <span class="code">master</span></div>
                                     <div class="commit">
-                                        <div class="sha">#a2186ba</div>
-                                        <div class="message">Add enchant command with argument resolvers and messages
-
-Implemented the `/enchant` command allowing players to enchant items in hand or target players' items. Added custom argument resolvers for enchantments and levels, enhanced message localization, and integrated suggestions for valid inputs.</div>
+                                        <div class="sha">#cdeaae5</div>
+                                        <div class="message">restructured project</div>
                                     </div>
                                 </div>
                             </section>
@@ -1308,10 +1302,8 @@ Implemented the `/enchant` command allowing players to enchant items in hand or 
                                 <div class="details">
                                     <div>on branch <span class="code">master</span></div>
                                     <div class="commit">
-                                        <div class="sha">#ef2b1ce</div>
-                                        <div class="message">Refactor SudoCommand and related classes to use UUIDs for player targeting
-
-Replaced Player objects with UUIDs in SudoCommand to improve handling of player identification and decouple from in-game state. Adjusted related classes and methods, including SudoPacket, to support these changes. Updated PlayerIdentifier to handle null UUIDs for console commands.</div>
+                                        <div class="sha">#6e49824</div>
+                                        <div class="message">restructured project</div>
                                     </div>
                                 </div>
                             </section>
@@ -1330,10 +1322,8 @@ Replaced Player objects with UUIDs in SudoCommand to improve handling of player 
                                 <div class="details">
                                     <div>on branch <span class="code">master</span></div>
                                     <div class="commit">
-                                        <div class="sha">#46d164c</div>
-                                        <div class="message">Add alert and sudo command implementations
-
-Introduced new alert management commands allowing to queue, remove, and send alerts and corresponding alert classes for packet handling. Added a "sudo" command to execute commands as console or players, with support for sudo spying and broadcasting notifications. Also included related refactoring such as package restructuring and handling localization for commands and arguments.</div>
+                                        <div class="sha">#f8eb726</div>
+                                        <div class="message">restructured project</div>
                                     </div>
                                 </div>
                             </section>
@@ -1352,10 +1342,8 @@ Introduced new alert management commands allowing to queue, remove, and send ale
                                 <div class="details">
                                     <div>on branch <span class="code">master</span></div>
                                     <div class="commit">
-                                        <div class="sha">#a437d09</div>
-                                        <div class="message">Add server links and "whois" command functionality
-
-Implemented server links system to display useful links to players on join or locale change. Added "whois" command to retrieve detailed information about players and entities from MongoDB. Updated localization templates and messages to support the new features.</div>
+                                        <div class="sha">#16dfc3e</div>
+                                        <div class="message">restructured project</div>
                                     </div>
                                 </div>
                             </section>
@@ -1374,10 +1362,8 @@ Implemented server links system to display useful links to players on join or lo
                                 <div class="details">
                                     <div>on branch <span class="code">master</span></div>
                                     <div class="commit">
-                                        <div class="sha">#70bd1b9</div>
-                                        <div class="message">Implement AdminChat and Helpop commands; refactor player references
-
-Introduce new AdminChatCommand and HelpopCommand for admin communication, leveraging Nats messaging. Refactor multiple classes to replace `player` with `source` for consistency, and unify queue publishing via ProxyUtils.</div>
+                                        <div class="sha">#f7629d0</div>
+                                        <div class="message">restructured project</div>
                                     </div>
                                 </div>
                             </section>
@@ -1396,10 +1382,8 @@ Introduce new AdminChatCommand and HelpopCommand for admin communication, levera
                                 <div class="details">
                                     <div>on branch <span class="code">master</span></div>
                                     <div class="commit">
-                                        <div class="sha">#88b60a6</div>
-                                        <div class="message">Refactor "Player" entities and services to "User."
-
-Updated nomenclature across services, entities, and associated logic to replace "Player" references with "User." Standardized naming improves clarity and aligns with broader system changes to better represent entities as users rather than players.</div>
+                                        <div class="sha">#c103de8</div>
+                                        <div class="message">restructured project</div>
                                     </div>
                                 </div>
                             </section>
@@ -1418,10 +1402,8 @@ Updated nomenclature across services, entities, and associated logic to replace 
                                 <div class="details">
                                     <div>on branch <span class="code">master</span></div>
                                     <div class="commit">
-                                        <div class="sha">#37e06bf</div>
-                                        <div class="message">Refactor message templates and related classes for consistency
-
-Replaced `NoticeWrapper` with `TextWrapper` where applicable to unify message handling. Adjusted method calls and parameters to align with the new template structure. Simplified `FightTagTask` by removing `ActionBarNoticeService` dependency in favor of direct template delivery.</div>
+                                        <div class="sha">#ccedd78</div>
+                                        <div class="message">restructured project</div>
                                     </div>
                                 </div>
                             </section>
@@ -1440,10 +1422,8 @@ Replaced `NoticeWrapper` with `TextWrapper` where applicable to unify message ha
                                 <div class="details">
                                     <div>on branch <span class="code">master</span></div>
                                     <div class="commit">
-                                        <div class="sha">#b58b6d7</div>
-                                        <div class="message">Refactor daily reward logic and add Day 1 script.
-
-Replaced `DailyBountyService` with `DailyBountyRegistry` for clearer semantics and extended functionality. Added Groovy script for Day 1 daily rewards, including a new cash reward and cheque generation. Simplified mission completion message handling.</div>
+                                        <div class="sha">#c1a1e05</div>
+                                        <div class="message">restructured project</div>
                                     </div>
                                 </div>
                             </section>
@@ -1453,7 +1433,7 @@ Replaced `DailyBountyService` with `DailyBountyRegistry` for clearer semantics a
             </section>
             <footer>
                 <span>These metrics include private contributions</span>
-                <span>Last updated 24 May 2025, 17:15:06 (timezone Europe/Warsaw) with lowlighter/metrics@3.34.0</span>
+                <span>Last updated 24 May 2025, 20:20:37 (timezone Europe/Warsaw) with lowlighter/metrics@3.34.0</span>
             </footer>
         </div>
         <div xmlns="http://www.w3.org/1999/xhtml" id="metrics-end"></div>
